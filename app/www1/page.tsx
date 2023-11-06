@@ -11,7 +11,7 @@ import 'lightgallery/css/lg-thumbnail.css';
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 import Menu from '../components/menu'
-import LightGal from "./LightGal"
+
 
 
 
