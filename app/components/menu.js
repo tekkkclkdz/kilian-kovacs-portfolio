@@ -33,21 +33,17 @@ export default function Menu() {
           
         <div className="fixed inset-0 font-victor-mono z-20 bg-black flex justify-center items-center">
           <div className="absolute inset-x-0 text-white top-0 text-center font-bold z-30">
-          {isMobile ? (
-            <a href='/' className="text-5xl cursor-pointer md:text-7xl">KILIAN KOVACS</a>
-          ) : (
-            <a href='/' className="text-7xl cursor-pointer">KILIAN KOVACS</a>
-          )}
+            <a href='/' className="sm:text-5xl cursor-pointer text-7xl">KILIAN KOVACS</a>
         </div>
           <div className="flex flex-col justify-center font-victor-mono items-center">
             <img className="absolute object-cover h-screen w-full z-10" src="/wow.jpg" alt="Wow" />
-            <div className="text-white text-4xl mb-40 z-20 cursor-pointer hover:underline hover:underline-offset-2">
+            <div className="text-white text-4xl z-20 cursor-pointer hover:underline hover:underline-offset-2">
               <a href='/portfolio'>PORTFOLIO</a>
             </div>
-            <div className="text-white text-4xl mb-40 z-20 cursor-pointer hover:underline hover:underline-offset-2">
+            <div className="text-white text-4xl z-20 cursor-pointer hover:underline hover:underline-offset-2">
               <a href='/posters'>POSTERS</a>
               </div>
-            <div className="text-white text-4xl mb-0 z-20 cursor-pointer hover:underline hover:underline-offset-2">
+            <div className="text-white text-4xl z-20 cursor-pointer hover:underline hover:underline-offset-2">
               <a href='/contact'>CONTACT</a>
             </div>
           </div>

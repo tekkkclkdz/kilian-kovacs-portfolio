@@ -26,18 +26,14 @@ export default function Menu() {
 
   return (
     <>
-        <div className={`absolute bottom-0 left-0 right-0 text-center font-bold text-white text-7xl z-30 cursor-pointer hover:underline hover:underline-offset-2 ${menuVisible ? 'fixed' : 'absolute'}`} onClick={() => setMenuVisible(!menuVisible)}>
+        <div className={`absolute bottom-0 left-0 right-0 text-center font-bold text-white text-3xl sm:text-7xl z-30 cursor-pointer hover:underline hover:underline-offset-2 ${menuVisible ? 'fixed' : 'absolute'}`} onClick={() => setMenuVisible(!menuVisible)}>
   <button className="hover:underline hover:underline-offset-2 font-victor-mono">MENU</button>
 </div>
         {menuVisible && (
           
         <div className="fixed inset-0 font-victor-mono bg-black flex justify-center items-center">
           <div className="absolute inset-x-0 text-white top-0 text-center font-bold z-10">
-          {isMobile ? (
-            <a href='/' className="text-5xl cursor-pointer md:text-7xl">KILIAN KOVACS</a>
-          ) : (
-            <a href='/' className="text-7xl cursor-pointer">KILIAN KOVACS</a>
-          )}
+          <a href='/' className="sm:text-5xl cursor-pointer text-7xl">KILIAN KOVACS</a>
         </div>
           <div className="flex flex-col justify-center font-victor-mono items-center">
             <img className="absolute object-cover h-screen w-full z-10" src="/wow.jpg" alt="Wow" />
